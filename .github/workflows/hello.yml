@@ -1,13 +1,12 @@
-name: hello world
-
+name: Simple Job
 on:
-  push:
-    branches:
-      - master
+push:
+branches:
+  - main
 
 jobs:
-  Hello:
-    runs-on: ubuntu-18.04
-    steps:
-      - name: Hello World!
-        run: echo "Hello World"
+Hello:
+runs-on: ubuntu-18.04
+steps:
+  - name: Hello World!
+run: echo "Hello World"
